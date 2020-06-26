@@ -13,11 +13,11 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+ENV['RACK_ENV'] = 'test'
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
 require './app.rb'
-ENV[‘RACK_ENV’] = ‘test’
 Capybara.app = Birthday
 
 RSpec.configure do |config|
