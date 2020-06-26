@@ -2,7 +2,11 @@ require 'sinatra/base'
 class Birthday < Sinatra::Base
 
   get '/' do
-    "Hello!"
+    erb :index
+  end
+
+  post '/birthday' do
+    
   end
 
 end
